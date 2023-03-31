@@ -10,5 +10,6 @@
 ##### Ссылки:
 *	[YouTrack](https://csftickets.youtrack.cloud/agiles/141-2/current)
 *	[Miro](https://miro.com/app/board/uXjVMei1diI=/?share_link_id=979339232749)
-*	[Техническое задание](https://github.com/ErronMeesh/TP-4.1-1/blob/main/Documentation/Техническое%20задание%20(5).pdf)
-*	[Курсовой проект](https://github.com/ErronMeesh/TP-4.1-1/blob/main/Documentation/Kursovoy_proekt.pdf)
+*	[Техническое задание](https://github.com/ErronMeesh/TP-4.1-1/blob/main/documentation/Tekhnicheskoe_zadanie.pdf)
+*	[Курсовой проект](https://github.com/ErronMeesh/TP-4.1-1/blob/main/documentation/Kursovoy_proekt.pdf)
+* [Видеопрезентация защиты ТЗ](https://github.com/ErronMeesh/TP-4.1-1/tree/main/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE%D0%BF%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D1%8B%20%D0%A2%D0%97)
