@@ -14,3 +14,4 @@
 *	[Курсовой проект](https://github.com/ErronMeesh/TP-4.1-1/blob/main/documentation/Kursovoy_proekt.pdf)
 * [Видеопрезентация защиты ТЗ](https://drive.google.com/file/d/1NBzXl_LQeGiRFN-EDbiD6ynB5uq0kxFE/view)
 *	[Продакшн макет](https://www.figma.com/file/bekrxpcynVxZkDQQPqe1AC/Untitled?node-id=0%3A1&t=yazoRJCk2nWvnVm9-1)
+*	[Frontend код / Альтернативный продакшн макет](https://github.com/ErronMeesh/TP-4.1-1/tree/main/Frontend)
