@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ВХОД</title>
+</head>
+<body>
+    <form method="post" th:action="${#httpServletRequest.requestURI}">
+        <input name="username" type="text" placeholder="логин">
+        <input name="password" type="password" placeholder="пароль">
+        <p>
+            <button type="submit">Войти</button>
+            <a th:href="@{/user/reg}">Зарегистрироваться</a>
+        </p>
+        <p th:if="${(param.error != null) and (param.error[0] == 'true')}">
+            ошибка входа
+        </p>
+    </form>
+</body>
+</html>
