@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>SkyLink Airlines</title>
+	<link rel="icon" type="image" href="img/icon.png">
+
+	<link rel="stylesheet" href="cssp/main.css">
+	<script src="jsp/app.js" defer></script>
+
+</head>
+<body style="background-color: #000;
+color: #fff;
+font-size: calc(var(--index) * .8);
+font-family: raleway_c, sans-serif;
+line-height: 1.75;
+height: var(--depth);
+font-weight: 300;">
+
+
+	<div class="container">
+		<section class="gallery">
+
+
+
+
+
+	<div class="frame">
+		<a th:href="@{/main}"> <img src="img/iconW.png" alt="" class="iconFB"></a>
+	
+		<div class="frame__content text-right">
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="form-box">
+						<div class="form-value">
+							<form method="post" th:action="${#httpServletRequest.requestURI}">
+								<h2>Выберите билет</h2>
+								
+								<select name="selectorName" id="" class="selectorNa">
+									<th:block th:each="dest : ${destP}">
+										<option th:value="${dest.destinationP}" th:text=${dest.destinationP}></option>
+									</th:block>
+								</select>
+
+			
+								<button th:if="${user } != null" type="submit">Выбрать</button>
+								<div class="register">
+									<p>Нет аккаунта? <a th:href="@{/user/reg}">Зарегистрировать</a></p>
+							
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="frame">
+		<div class="frame__content text-left">
+			<h3>Узнайте больше о Канаде</h3>
+			<p>Это удивительная страна богатая грандиозными водопадами, красивейшими озерами и реками, величественными горами, сверкающими ледниками и 35 национальными заповедниками и парками, богатыми уникальной флорой и фауной.</p>
+		</div>
+	</div>
+
+	<div class="frame frame_bg">
+		<div class="frame__content">
+			<div class="frame-media frame-media_right" style="background-image: url(img/canLast3.jfif)"></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+			<div class="frame">
+				<div class="frame__content text-right">
+					<h3>Показ мод 12 апреля</h3>
+					<p>Раф Симонс и Миучча Прада продолжили тематику предыдущей коллекции. Моя любовь сеты с юбкой из полупрозрачных материалов, которые хочется добавить в свой гардероб уже сейчас. Успейте посетить эту выставку в Калгари.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/work/fash.jpg)"></div>
+				</div>
+			</div>
+
+
+
+
+			<div class="frame">
+				<div class="frame__content text-left">
+					<h3>31 мая выставка дополненной реальности</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur elit. Rerum dolorem assumenda consequatur dicta error iure laboriosam temporibus omnis quae eaque aliquam esse unde accusamus dolores non soluta.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/work/real.jpg)"></div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="frame">
+				<div class="frame__content">
+					<h2>Beautiful Canada</h2>
+				</div>
+			</div>
+
+			<div class="frame">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/1.jpg)"></div>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<video class="frame-media frame-media_right" src="media/video_optimized.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame__content text-right">
+					<h3>Невероятная природа</h3>
+					<p>Огромные территории Канады являются тундрой. Далее тундра сменяется хвойными лесами. На юге страны растут смешанные леса, в центре они сменяются степями.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/2.jpg)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/3.jpg)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame__content text-left">
+					<h3>Лучшие горы</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur elit. Rerum dolorem assumenda consequatur dicta error iure laboriosam temporibus omnis quae eaque aliquam esse unde accusamus dolores non soluta.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/4.jpg)"></div>
+				</div>
+			</div>
+
+			<div class="frame">
+				<div class="frame__content">
+					<video class="frame-media frame-media_left" src="media/video_optimized.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+			<div class="frame"></div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/5.jpg)"></div>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<video class="frame-media" src="media/video_optimized.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+
+			<div class="frame">
+				<a th:href="@{/main}" class="goBack frame__content"> вернуться на главную страницу </a>
+			</div>
+
+		</section>
+	</div>
+
+</body>
+</html>

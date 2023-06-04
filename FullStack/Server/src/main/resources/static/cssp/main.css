@@ -1,0 +1,366 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--gutter: 30px;
+	--side-small: 26;
+	--side-big: 36;
+	--side-small-H: 5;
+	--side-big-H: 60;
+	--depth: 5900px;
+	--transition: .75s cubic-bezier(.075, .5, 0, 1)
+}
+
+/* Скрываем Scrollbar */
+body {
+	scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar { 
+	display: none; /* Safari and Chrome */
+}
+
+@font-face {
+	font-family: raleway_c;
+	src: url(../fonts/raleway-v22-cyrillic-300.woff2);
+	font-weight: 300;
+}
+@font-face {
+	font-family: raleway_c;
+	src: url(../fonts/raleway-v22-cyrillic-100.woff2);
+	font-weight: 100;
+}
+body {
+	background-color: #000;
+	color: #fff;
+	font-size: calc(var(--index) * .8);
+	font-family: raleway_c, sans-serif;
+	line-height: 1.75;
+	height: var(--depth);
+	font-weight: 300;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	perspective: 1500px;
+}
+.gallery {
+	transform-style: preserve-3d;
+	height: 100%;
+}
+.frame {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: var(--transition), opacity .75s ease;
+	will-change: transform;
+	transform-style: preserve-3d;
+}
+h1, h2, h3, h4 {
+	font-weight: 100;
+	text-transform: uppercase;
+	width: min-content;
+	line-height: 1;
+}
+.frame h2 {
+	text-align: center;
+	font-size: calc(var(--index) * 3.3);
+}
+.frame-media {
+	position: relative;
+	width: calc(var(--index) * var(--side-small));
+	height: calc(var(--index) * var(--side-big));
+	background-position: center;
+	background-size: cover;
+}
+.frame-mediaHorizontal {
+	position: relative;
+	width: calc(var(--index) * var(--side-big-H));
+	height: calc(var(--index) * var(--side-small-H));
+	background-position: center;
+	background-size: cover;
+
+}
+.frame-media_left {
+	right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+.frame-media_right {
+	left: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+.frame-media_top {
+	bottom: calc(var(--side-small-H) / 2 * var(--index) + var(--gutter));
+}
+.frame-media_bottom {
+	top: calc(var(--side-small-H) / 2 * var(--index) + var(--gutter));
+}
+.frame_bg {
+	background-color: rgb(0 0 0 / .87);
+}
+.frame_bgW {
+	background-color: rgba(255, 255, 255, 0.87);
+}
+video.frame-media {
+	width: calc(var(--index) * var(--side-big));
+	height: calc(var(--index) * var(--side-small));
+}
+video.frame-media_right {
+	left: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
+}
+video.frame-media_left {
+	right: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
+}
+.text-right > * {
+	position: relative;
+	left: 25vw;
+}
+.text-left > * {
+	position: relative;
+	right: 25vw;
+}
+.text-top > * {
+	position: relative;
+	bottom: 10vw;
+}
+.text-bottom > * {
+	position: relative;
+	top: 18vw;
+}
+.frame h3 {
+	font-size: calc(var(--index) * 3);
+}
+.frame p {
+	max-width: 30vw;
+	margin-top: 3vh;
+}
+.soundbutton {
+	position: fixed;
+	bottom: 5vh;
+	right: 5vw;
+	cursor: pointer;
+	width: 24px;
+	transition: .25s ease;
+}
+.soundbutton.paused {
+	opacity: .25;
+}
+.vkL{
+ 	width: 2vw;
+}
+.telegL{
+	width: 1.8vw;
+}
+
+
+
+
+
+
+.iconFB {
+	height: 17vh;
+	position: absolute;
+	top: 5%;
+	left: 6%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.goBack {
+	text-decoration: none;
+	color: #fff;
+}
+
+.goBackW {
+	text-decoration: none;
+	color: #000000;
+}
+.whitePrem{
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    
+    background-position: center;
+    background-size: cover;
+}
+.form-box{
+    position: relative;
+    width: 600px;
+    height: 800px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-boxQr{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.forget label input{
+    margin-right: 3px;
+    
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+.qrCod{
+    margin-left: 17%;
+    margin-bottom: 0;
+}
+
+.iconForm{
+    position: absolute;
+    height: 100px;
+    top: 10px;
+    left: 20px;
+}
+
+
+
+.selectorNa{
+	width: 100%;
+	min-width: 15vw;
+	max-width: 30vw;
+	border: 1px solid var(--select-border);
+	border-radius: 0.85em;
+	padding: 0.25em 0.5em;
+	font-size: 1.25rem;
+	cursor: pointer;
+	line-height: 1.1;
+	background-color: #fff;
+	background-image: #fff;
+	
+  }
