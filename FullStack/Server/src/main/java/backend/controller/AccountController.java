@@ -55,7 +55,7 @@ public class AccountController {
             ...
          */
         // путь до html файла внутри папки frontend
-        return "ready-html/acc2.html";
+        return "ready-html/account.html";
     }
 
 

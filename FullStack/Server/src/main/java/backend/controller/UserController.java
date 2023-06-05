@@ -50,7 +50,7 @@ public class UserController {
             ...
          */
         // путь до html файла внутри папки frontend
-        return "ready-html/test_html_2";
+        return "ready-html/regip";
     }
 
     @PostMapping("/reg")
@@ -73,7 +73,7 @@ public class UserController {
         // проверяем добавился он или нет (например такой логин уже был занят)
         if (!added) {
             model.addAttribute("error", "ошибка регистрации");
-            return "ready-html/test_html_2";
+            return "ready-html/regip";
         }
         // при успешной регистрации делаем переадресацию на страницу входа
         // после redirect указывается url нужной страницы

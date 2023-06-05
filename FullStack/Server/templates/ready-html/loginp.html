@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image" href="img/icon.png">
+    <link rel="stylesheet" href="cssform/main.css">
+    <title>SkyLink Airlines</title>
+</head>
+<body>
+<section>
+    <a th:href="@{/main}"> <img src="img/iconW.png" alt="" class="iconForm"></a>
+    <div class="form-box">
+        <div class="form-value">
+            <form method="post" th:action="${#httpServletRequest.requestURI}">
+                <h2>Войти</h2>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input name="username" type="text"  required>
+                    <label for="">Логин</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input name="password" type="password"  required>
+                    <label for="">Пароль</label>
+                </div>
+
+
+                <button type="submit">Войти</button>
+                <div class="register">
+                    <p>У вас нет учетной записи? <a th:href="@{/reg}">Зарегистрировать</a></p>
+                  
+
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</section>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

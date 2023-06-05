@@ -71,11 +71,7 @@ public class FormController {
             model.addAttribute("user", user);
             passengerService.add(new Passenger(surname, name, lastname,phoneNumber,mail,docSeries,docNum,user));
 
-        // тут какая-то логика необходимая этой странице
-        // создаём нового пользователя
-//        boolean added = userService.add(new User(login, password, login, Boolean.TRUE));
 
-        // при успешной регистрации делаем переадресацию на страницу входа
         return "redirect:/FormQr";
     }
 

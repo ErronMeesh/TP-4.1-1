@@ -57,19 +57,7 @@ public class CanadaController {
         List<Flight> destP = flightService.getAll();
 
         model.addAttribute("destP", destP);
-//
-//        model.addAttribute("destP0", destP.get(0).getDestinationP());
-//        model.addAttribute("destP1", destP.get(1).getDestinationP());
-//        model.addAttribute("destP2", destP.get(2).getDestinationP());
 
-
-
-//        model.addAttribute("destP3", destP.get(3).getDestinationP());
-//        model.addAttribute("destP4", destP.get(4).getDestinationP());
-//        model.addAttribute("destP5", destP.get(5).getDestinationP());
-//        model.addAttribute("destP6", destP.get(6).getDestinationP());
-//        model.addAttribute("destP7", destP.get(7).getDestinationP());
-//        model.addAttribute("destP8", destP.get(8).getDestinationP());
 
         return "ready-html/waypage.html";
     }

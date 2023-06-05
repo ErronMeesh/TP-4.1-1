@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <link rel="stylesheet" href="cssform/main.css">
+  <link rel="icon" type="image" href="img/icon.png">
+  <title>SkyLink Airlines</title>
+</head>
+<body>
+    <section>
+        <a th:href="@{/main}"> <img src="img/iconW.png" alt="" class="iconForm"></a>
+        <div class="form-box">
+            <div class="form-value">
+                <form method="post" th:action="${#httpServletRequest.requestURI}">
+                    <h2>Введите данные</h2>
+                    <div class="inputbox">
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                        <input name="docNum" type="text" required>
+                        <label for="">Номер документа</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                        <input name="docSeries"  type="text" required>
+                        <label for="">Серия документа</label>
+                    </div>
+                    
+                    <div class="inputbox">
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                        <input name="name" type="text" required>
+                        <label for="">Имя</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                        <input name="surname" type="text" required>
+                        <label for="">Фамилия</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                        <input name="lastname" type="text" required>
+                        <label for="">Отчество</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <input name="phoneNumber" type="text" required>
+                        <label for="">Телефон</label>
+                    </div>
+
+
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input name="mail" type="text" required>
+                        <label for="">Email</label>
+                    </div>
+
+
+                    <button type="submit">Подтвердить</button>
+                    <div class="register">
+                        <p>У вас нет учетной записи? <a th:href="@{/reg}">Зарегистрировать</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

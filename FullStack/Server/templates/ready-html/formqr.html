@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="cssform/main.css">
+  <link rel="icon" type="image" href="img/icon.png">
+  <title>SkyLink Airlines</title>
+</head>
+<body>
+
+
+    <section>
+        <a th:href="@{/main}"> <img src="img/iconW.png" alt="" class="iconForm"></a>
+        
+        
+        
+        <div class="form-boxQr">
+            <div class="form-value">
+                <form method="post" th:action="${#httpServletRequest.requestURI}">
+                    <h2>Оплатите билет</h2>
+                    <img src="img/qrCode.png" alt="" class="qrCod">
+                  
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="inputbox">
+                        <ion-icon name="briefcase-outline"></ion-icon>
+                        <input name="promo" type="text" required>
+                        <label for="">Введите промокод</label>
+                    
+                    </div>
+
+                    <button type="submit">Ввести</button>
+
+                    
+                   
+                </form>
+            </div>
+        </div>
+     
+        <a th:href="@{/main}"> <img src="img/wharrow.png" alt="" class="arrow"></a>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

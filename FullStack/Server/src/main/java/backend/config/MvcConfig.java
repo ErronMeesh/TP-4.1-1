@@ -11,7 +11,7 @@ public class MvcConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         //тут надо прописать путь до страницы входа в логин юзера
-        registry.addViewController("/log").setViewName("ready-html/test_html_1");
+        registry.addViewController("/log").setViewName("ready-html/loginp");
     }
 
     @Override

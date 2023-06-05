@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.security.Principal;
 import java.util.List;
-
 @Controller
 @Api
 
@@ -27,11 +26,6 @@ public class FormQrController {
 
     @Autowired
     private UserService userService;
-    @Autowired
-    private FlightService flightService;
-    @Autowired
-    private HistoryOfOrdersService historyOfOrdersService;
-
 
     @GetMapping("/FormQr")
 
@@ -46,10 +40,23 @@ public class FormQrController {
             model.addAttribute("user", user);
         }
 
-        List<Flight> destP = flightService.getAll();
-
-        model.addAttribute("destP", destP);
 
         return "ready-html/formQr.html";
+    }
+
+    @PostMapping("/FormQr")
+
+    public String testAddControllerMethod_POSTMAPPING(Principal principal, Model model, @RequestParam String promo) {
+
+        String prom = promo;
+        String pro= "sky";
+
+        if (prom.equals(pro)) {
+            return "redirect:/FormSale";
+
+        } else {
+            return "ready-html/formqr";
+        }
+
     }
 }

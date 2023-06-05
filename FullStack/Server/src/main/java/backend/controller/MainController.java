@@ -38,11 +38,7 @@ public class MainController {
             model.addAttribute("user", user);
             model.addAttribute("userStat", user.getUserStatus());
         }
-        // тут какая-то логика необходимая этой странице
-        /*
-            ...
-         */
-        // путь до html файла внутри папки frontend
+
         return "ready-html/index.html";
     }
 
