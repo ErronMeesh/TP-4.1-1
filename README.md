@@ -16,4 +16,5 @@
 *	[Продакшн макет](https://www.figma.com/file/bekrxpcynVxZkDQQPqe1AC/Untitled?node-id=0%3A1&t=yazoRJCk2nWvnVm9-1)
 *	[Frontend код / Альтернативный продакшн макет](https://github.com/ErronMeesh/TP-4.1-1/tree/main/Frontend)
 * [Обзор серверной части приложения](https://drive.google.com/file/d/1sMq69fiU4JSRixrDLzicgiYRmZ-53BsC/view?usp=drive_link)
+* [Обзор клиентской части приложения](https://drive.google.com/drive/folders/1jZyPDKNeObwtjBFFNHRWF2BoGR_oy4_F?usp=sharing)
 * [Презентация проекта](https://docs.google.com/presentation/d/1qRqRySYEr27jArMHJQJsnzR-BaIDAaB-/edit?usp=drive_link&ouid=106646677803705549711&rtpof=true&sd=true)
