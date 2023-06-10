@@ -7,6 +7,7 @@
 *   [Виктор Николюкин](https://github.com/nikolyukin28)
 ## Описание проекта:
 Данный проект предназначен для покупки билетов авиакомпании с возможностью просмотра краткой информации о направлениях (странах) и мероприятиях, которые будут происходить в соответствующей стране.
+Для тестирования функций разных групп пользователей мы предлагаем вам воспользоваться аккаунтами "Обычного" пользователя - Логин: RegularUser; Пароль: 12345; "Премиум" пользователя - Логин: PremiumUser; Пароль: 12345. Для тестирования функции промокода введите промокод "sky".
 ##### Ссылки:
 *	[YouTrack](https://csftickets.youtrack.cloud/agiles/141-2/current)
 *	[Miro](https://miro.com/app/board/uXjVMei1diI=/?share_link_id=979339232749)
@@ -19,3 +20,4 @@
 * [Обзор клиентской части приложения](https://drive.google.com/drive/folders/1jZyPDKNeObwtjBFFNHRWF2BoGR_oy4_F?usp=sharing)
 * [Видеопрезентация проекта](https://drive.google.com/file/d/1qHerAvMpDBNcvijUXq42joMdbmP1Qen1/view?usp=drive_link)
 * [Презентация проекта](https://docs.google.com/presentation/d/1qRqRySYEr27jArMHJQJsnzR-BaIDAaB-/edit?usp=drive_link&ouid=106646677803705549711&rtpof=true&sd=true)
+* [Сайт](https://drive.google.com/drive/folders/1taGjxxL5dmsCBihozTdgEUPcgDaVowN7?usp=sharing)
