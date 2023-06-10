@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>SkyLink Airlines</title>
+	<link rel="icon" type="image" href="img/icon.png">
+
+	<link rel="stylesheet" href="cssp/main.css">
+	<script src="jsp/app.js" defer></script>
+
+</head>
+<body style="background-color: #000;
+color: #fff;
+font-size: calc(var(--index) * .8);
+font-family: raleway_c, sans-serif;
+line-height: 1.75;
+height: var(--depth);
+font-weight: 300;">
+
+
+	<div class="container">
+		<section class="gallery">
+
+
+
+
+
+	<div class="frame">
+		<a th:href="@{/main}"> <img src="img/iconW.png" alt="" class="iconFB"></a>
+	
+		<div class="frame__content text-right">
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="form-box">
+						<div class="form-value">
+							<form method="post" th:action="${#httpServletRequest.requestURI}">
+								<h2>Выберите билет</h2>
+								
+								<select name="selectorName" id="" class="selectorNa">
+									<th:block th:each="dest : ${destP}">
+										<option th:value="${dest.destinationP}" th:text=${dest.destinationP}></option>
+									</th:block>
+								</select>
+
+			
+								<button th:if="${user } != null" type="submit">Выбрать</button>
+								<div class="register">
+									<p>Нет аккаунта? <a th:href="@{/user/reg}">Зарегистрировать</a></p>
+							
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="frame">
+		<div class="frame__content text-left">
+			<h3>Италия Мероприятия</h3>
+			<p>На этой странице вы сможете ознакомиться с ближайшими мероприятиями, проходящими в Италии. А также посетить фотогалерею, где мы выбрали самые колоритные и запоминающиеся фотографии специально для вас.</p>
+		</div>
+	</div>
+
+	<div class="frame frame_bg">
+		<div class="frame__content">
+			<div class="frame-media frame-media_right" style="background-image: url(img/italy/1.jfif)"></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+			<div class="frame">
+				<div class="frame__content text-right">
+					<h3> 16 июля стендап-выступление в Милане</h3>
+					<p> Приглашаем вас посетить захватывающее стендап-выступление в Милане, где вы сможете насладиться непревзойденным юмором и забыться от смеха. Талантливые комики сделают все возможное, чтобы развеселить вас своими остроумными шутками и забавными историями. Стендап-комедия - это не только прекрасный способ провести время, но и отличная возможность погрузиться в атмосферу итальянского юмора и культуры. </p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/poster/111.jfif)"></div>
+				</div>
+			</div>
+
+
+
+
+			<div class="frame">
+				<div class="frame__content text-left">
+					<h3>31 июля "Ночь под звездами"</h3>
+					<p>В горах Италии в обсерватории "Асиаго" проходит удивительная выставка, раскрывающая тайны космоса. Здесь вы сможете погрузиться в мир астрономии и наблюдения за звездами, планетами и галактиками. Выставка предлагает уникальную возможность ознакомиться с последними достижениями в космической науке, интерактивными инсталляциями и фотографиями, отображающими красоту и загадочность вселенной. </p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/poster/11.png)"></div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="frame">
+				<div class="frame__content">
+					<h2>ФОТОГАЛЕРЕЯ</h2>
+				</div>
+			</div>
+
+			<div class="frame">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/italy/2.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<video class="frame-media frame-media_right" src="media/italy.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame__content text-right">
+					<h3>Изумительные пизажи</h3>
+					<p>Приглашаем вас отправиться в Италию и восхититься её изумительными пейзажами, которые оставят незабываемое впечатление. От покрытых виноградниками холмов Тосканы до прекрасного побережья Амальфи, от грандиозных гор Доломитов до очарования озера Комо, Италия предлагает великолепные виды на природу во всех её проявлениях.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/italy/3.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/italy/4.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame__content text-left">
+					<h3>Изысканная кухня</h3>
+					<p>Отправляйтесь  в Италию и погрузитесь в мир её изысканной кухни, чтобы испытать настоящий гастрономический шок. Италия славится своими богатыми вкусами, свежими ингредиентами и уникальными рецептами, которые передаются из поколения в поколение. От пиццы Неаполя и пасты из Болоньи до морепродуктов на Сицилии и сыров из Тосканы, Италия предлагает бесконечное разнообразие блюд, которые удовлетворят самых искушенных гурманов.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/italy/7.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame">
+				<div class="frame__content">
+					<video class="frame-media frame-media_left" src="media/italy.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+			<div class="frame"></div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/italy/6.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<video class="frame-media" src="media/italy.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+
+			<div class="frame">
+				<a th:href="@{/main}" class="goBack frame__content"> вернуться на главную страницу </a>
+			</div>
+
+		</section>
+	</div>
+
+</body>
+</html>

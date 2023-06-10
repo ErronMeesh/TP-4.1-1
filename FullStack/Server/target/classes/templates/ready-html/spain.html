@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>SkyLink Airlines</title>
+	<link rel="icon" type="image" href="img/icon.png">
+
+	<link rel="stylesheet" href="cssp/main.css">
+	<script src="jsp/app.js" defer></script>
+
+</head>
+<body style="background-color: #000;
+color: #fff;
+font-size: calc(var(--index) * .8);
+font-family: raleway_c, sans-serif;
+line-height: 1.75;
+height: var(--depth);
+font-weight: 300;">
+
+
+	<div class="container">
+		<section class="gallery">
+
+
+
+
+
+	<div class="frame">
+		<a th:href="@{/main}"> <img src="img/iconW.png" alt="" class="iconFB"></a>
+	
+		<div class="frame__content text-right">
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="form-box">
+						<div class="form-value">
+							<form method="post" th:action="${#httpServletRequest.requestURI}">
+								<h2>Выберите билет</h2>
+								
+								<select name="selectorName" id="" class="selectorNa">
+									<th:block th:each="dest : ${destP}">
+										<option th:value="${dest.destinationP}" th:text=${dest.destinationP}></option>
+									</th:block>
+								</select>
+
+			
+								<button th:if="${user } != null" type="submit">Выбрать</button>
+								<div class="register">
+									<p>Нет аккаунта? <a th:href="@{/user/reg}">Зарегистрировать</a></p>
+							
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="frame">
+		<div class="frame__content text-left">
+			<h3>Испания Мероприятия</h3>
+			<p>На этой странице вы сможете ознакомиться с ближайшими мероприятиями, проходящими в Испании. А также посетить фотогалерею, где мы выбрали самые колоритные и запоминающиеся фотографии специально для вас.</p>
+		</div>
+	</div>
+
+	<div class="frame frame_bg">
+		<div class="frame__content">
+			<div class="frame-media frame-media_right" style="background-image: url(img/spain/1.jfif)"></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+			<div class="frame">
+				<div class="frame__content text-right">
+					<h3>14  июля  Ла Мар де Музыкас</h3>
+					<p>Приглашаем вас посетить незабываемое мероприятие в Картахене - Ла Мар де Музыкас. Это уникальное событие, которое объединяет великолепную музыку и захватывающую атмосферу. Величественные морские пейзажи и ночное небо создают волшебную обстановку, в которой звуки музыки раскрываются во всей своей красоте. Вы сможете наслаждаться выступлениями мировых музыкантов, погружаясь в магию искусства под открытым небом. </p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/poster/1.jfif)"></div>
+				</div>
+			</div>
+
+
+
+
+			<div class="frame">
+				<div class="frame__content text-left">
+					<h3>12 августа ярмарка FeriadeAgosto</h3>
+					<p>Feria de Agosto или Feria de Málaga проходит каждый август в городе Малага, Испания. Во время проведения ярмарки в Малаге есть развлечения как для взрослых, так и для детей: представления, музыка, танцы и другие развлечения. На самом деле есть два мероприятия, которые проводятся в двух местах: Day Fair и Night Fair. Также в города проводится коррида на арене для боя быков La Malagueta.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/poster/2.png)"></div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="frame">
+				<div class="frame__content">
+					<h2>ФОТОГАЛЕРЕЯ</h2>
+				</div>
+			</div>
+
+			<div class="frame">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/spain/2.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<video class="frame-media frame-media_right" src="media/spain.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame__content text-right">
+					<h3>Живописные пляжи</h3>
+					<p>Приглашаем вас отправиться в Испанию и насладиться её теплыми пляжами, предлагающими идеальное сочетание отдыха и исследования. Испанское побережье раскинуто на протяжении тысячи километров, предлагая великолепные пляжи с золотым песком и кристально чистой водой. </p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/spain/3.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/spain/4.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame__content text-left">
+					<h3>Неповторимая архитектура</h3>
+					<p>Приглашаем вас отправиться в Испанию и погрузиться в мир неповторимой архитектуры этой удивительной страны. От древних руин до великолепных готических соборов, от арабских дворцов до современных архитектурных шедевров, Испания предлагает бесконечное разнообразие стилей и эпох, оставленных своим следом в её городах и деревнях. </p>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/spain/5.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame">
+				<div class="frame__content">
+					<video class="frame-media frame-media_left" src="media/spain.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+			<div class="frame"></div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/spain/6.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<video class="frame-media" src="media/spain.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+
+			<div class="frame">
+				<a th:href="@{/main}" class="goBack frame__content"> вернуться на главную страницу </a>
+			</div>
+
+		</section>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>SkyLink Airlines</title>
+	<link rel="icon" type="image" href="img/icon.png">
+
+	<link rel="stylesheet" href="cssp/main.css">
+	<script src="jsp/app.js" defer></script>
+
+</head>
+<body style="background-color: #ffffff;
+color: #000000;
+font-size: calc(var(--index) * .8);
+font-family: raleway_c, sans-serif;
+line-height: 1.75;
+height: var(--depth);
+font-weight: 300;">
+
+
+	<div class="container">
+		<section class="gallery">
+
+
+
+
+
+	<div class="frame">
+		<a th:href="@{/main}"> <img src="img/icon.png" alt="" class="iconFB"></a>
+	
+		<div class="frame__content text-right">
+			<div class="frame frame_bg">
+				<div class="frame__content">
+					<div class="form-box">
+						<div class="form-value">
+							<form method="post" th:action="${#httpServletRequest.requestURI}">
+								<h2>Выберите билет</h2>
+								
+								<select name="selectorName" id="" class="selectorNa">
+									<th:block th:each="dest : ${destP}">
+										<option th:value="${dest.destinationP}" th:text=${dest.destinationP}></option>
+									</th:block>
+								</select>
+
+								<button th:if="${user } != null" type="submit">Выбрать</button>
+								<div class="register">
+									<p>Нет аккаунта? <a th:href="@{/user/reg}">Зарегистрировать</a></p>
+							
+								</div>
+								<p class="goBack">Похоже у вас есть премиум статус. Поздравляем! <br> Теперь к вашему заказу будет добавленны услуги компании. Вы сможете ознакомиться с ними в разделе "о комании" на главной странице. </p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="frame">
+		<div class="frame__content text-left">
+			<h3>Греция Мероприятия</h3>
+			<p>На этой странице вы сможете ознакомиться с ближайшими мероприятиями, проходящими в Греции. А также посетить фотогалерею, где мы выбрали самые колоритные и запоминающиеся фотографии специально для вас.</p>
+		</div>
+	</div>
+
+	<div class="frame frame_bgW">
+		<div class="frame__content">
+			<div class="frame-media frame-media_right" style="background-image: url(img/greece/1.jfif)"></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+			<div class="frame">
+				<div class="frame__content text-right">
+					<h3>22 июня выставка цветов в Родосе</h3>
+					<p>В Родосе вас ожидает захватывающая выставка цветов, где весь город оживет в море ярких оттенков и ароматов. Это уникальное событие предлагает незабываемую возможность погрузиться в мир цветов и растений. Вы сможете насладиться многообразием экзотических цветов, редких растений и оригинальных флористических композиций, созданных мастерами из разных стран.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bgW">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/poster/222.jfif)"></div>
+				</div>
+			</div>
+
+
+
+
+			<div class="frame">
+				<div class="frame__content text-left">
+					<h3>6 августа открытие парка Паграти </h3>
+					<p>Приглашаем вас посетить захватывающее открытие парка в Паграти, где вы сможете погрузиться в мир природной красоты и развлечений. Этот новый парк предлагает уникальные аттракционы, зеленые пространства для отдыха и разнообразные мероприятия. Не упустите возможность стать одним из первых, кто окунется в этот волшебный мир природы и развлечений. Приходите на открытие парка в Паграти и создайте незабываемые воспоминания с вашей семьей и друзьями.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bgW">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/poster/22.jfif)"></div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="frame">
+				<div class="frame__content">
+					<h2>ФОТОГАЛЕРЕЯ</h2>
+				</div>
+			</div>
+
+			<div class="frame">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/greece/2.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame frame_bgW">
+				<div class="frame__content">
+					<video class="frame-media frame-media_right" src="media/greece.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame__content text-right">
+					<h3>Пышные сады</h3>
+					<p>Приглашаем вас отправиться в Грецию и открыть для себя её пышные сады, которые являются источником красоты и вдохновения. От величественных садов великих древнегреческих храмов, таких как Акрополь и Дельфы, до изумительных ботанических садов на острове Родос и вариаций средиземноморской флоры на Крите, Греция предлагает оазисы природной роскоши. Исследуйте лабиринты ухоженных аллей, наслаждайтесь ароматами цветущих растений и научитесь о местной флоре и её истории. </p>
+				</div>
+			</div>
+
+			<div class="frame frame_bgW">
+				<div class="frame__content">
+					<div class="frame-media frame-media_left" style="background-image: url(img/greece/3.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame frame_bgW">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/greece/4.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+
+			<div class="frame">
+				<div class="frame__content text-left">
+					<h3>Древнее наследие</h3>
+					<p>Приглашаем вас отправиться в Грецию и окунуться в её богатое древнее наследие, которое пронизывает каждый уголок этой удивительной страны. Греция предлагает уникальную возможность изучить историю и культуру древнего мира. Путешествуйте во времени, глубже в древность, исследуя музеи и археологические памятники, чтобы полностью погрузиться в удивительный мир греческого древнего наследия. Греция ждет вас, чтобы предоставить вам неповторимый опыт и возможность ощутить присутствие величия и великолепия древности.</p>
+				</div>
+			</div>
+
+			<div class="frame frame_bgW">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/greece/5.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame">
+				<div class="frame__content">
+					<video class="frame-media frame-media_left" src="media/greece.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+			<div class="frame"></div>
+			<div class="frame"></div>
+
+			<div class="frame frame_bgW">
+				<div class="frame__content">
+					<div class="frame-media frame-media_right" style="background-image: url(img/greece/6.jfif)"></div>
+				</div>
+			</div>
+
+			<div class="frame frame_bgW">
+				<div class="frame__content">
+					<video class="frame-media" src="media/greece.mp4" autoplay loop muted></video>
+				</div>
+			</div>
+
+
+			<div class="frame">
+				<a th:href="@{/main}" class="goBackW frame__content"> вернуться на главную страницу </a>
+			</div>
+
+		</section>
+	</div>
+
+</body>
+</html>

@@ -5,6 +5,7 @@ import backend.model.User;
 import backend.service.HistoryOfOrdersService;
 import backend.service.UserService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,7 +18,7 @@ import java.security.Principal;
 import java.util.List;
 
 @Controller
-@Api
+@Api (tags = "User Controller")
 // общий маппинг для всех контроллеров внутри этого класса
 @RequestMapping("")
 public class UserController {
@@ -30,6 +31,8 @@ public class UserController {
     // маппинг для конретного метода с указанием типа (get/post)
     // в итоге метод сработает при get запросе пользователя на страницу /plane/add
     @GetMapping("/reg")
+    @ApiOperation("Get registration page")
+
     // Principal - взаимодействие с текущем пользователем
     // Model - взаимодействие со страницей (html)
     public String testAddControllerMethod_GETMAPPING(Principal principal, Model model) {
@@ -54,6 +57,7 @@ public class UserController {
     }
 
     @PostMapping("/reg")
+    @ApiOperation("Handle registration form submission")
     // @RequestParam указывается у всех параметров, которые должны считываться на странице фронта
     // и передаваться на серв, при этом имена переменных должны 1в1 совпадать с тем как они названы на фронте
     public String testAddControllerMethod_POSTMAPPING(Principal principal, Model model, @RequestParam String login,
