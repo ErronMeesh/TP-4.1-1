@@ -43,7 +43,10 @@ body {
 	text-decoration: none;
 	color: #272727;
 }
-
+.linkOffYel{
+	text-decoration: none;
+	color: #e4a163;
+}
 
 
 
@@ -283,7 +286,7 @@ body {
 }
 .selector2{
 	position: absolute;
-	left: 62.5vw;
+	left: 63.5vw;
 	top: 195vh;
 
 	color: #fff;
@@ -293,7 +296,7 @@ body {
     font-weight: 300;
 
 	background: none;
-	text-align: center;
+	text-align: left;
 	width: 10vw;
 	border-radius: 1vw;
 }
@@ -316,7 +319,7 @@ body {
 .selector4{
 	position: absolute;
 	left: 51vw;
-	top: 216vh;
+	top: 219vh;
 
 	color: #fff;
     font-size: calc(var(--index) * 1.5);
@@ -331,8 +334,8 @@ body {
 }
 .selector5{
 	position: absolute;
-	left: 62.5vw;
-	top: 216vh;
+	left: 63.5vw;
+	top: 219vh;
 
 	color: #ffffff;
     font-size: calc(var(--index) * 1.5);
@@ -341,7 +344,7 @@ body {
     font-weight: 300;
 
 	background: none;
-	text-align: center;
+	text-align: left;
 	width: 10vw;
 	border-radius: 1vw;
 }
@@ -848,7 +851,7 @@ body {
 .selector8{
 	position: absolute;
 	left: 75vw;
-	top: 216vh;
+	top: 219vh;
 
 	color: #fff;
     font-size: calc(var(--index) * 1.5);
@@ -857,7 +860,7 @@ body {
     font-weight: 300;
 
 	background: none;
-	text-align: left;
+	text-align: center;
 	width: 10vw;
 	border-radius: 1vw;
 }

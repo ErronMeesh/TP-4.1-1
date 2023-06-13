@@ -41,7 +41,7 @@ public class FormQrController {
         }
 
 
-        return "ready-html/formQr.html";
+        return "ready-html/formqr.html";
     }
 
     @PostMapping("/FormQr")

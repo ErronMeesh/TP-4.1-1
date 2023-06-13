@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="ru">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2CCEL3TPS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-N2CCEL3TPS');
+    </script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="cssform/main.css">
     <link rel="icon" type="image" href="img/icon.png">
-    <title>SkyLink Airlines</title>
+    <title>Registration</title>
 </head>
 <body>
 <section>
@@ -15,12 +23,12 @@
                 <h2>Регистрация</h2>
                 <div class="inputbox">
                     <ion-icon name="mail-outline"></ion-icon>
-                    <input name="login" type="text" placeholder="логин" required>
+                    <input name="login" type="text" required>
                     <label for="">Логин</label>
                 </div>
                 <div class="inputbox">
                     <ion-icon name="lock-closed-outline"></ion-icon>
-                    <input name="password" type="password" placeholder="пароль" required>
+                    <input name="password" type="password" required>
                     <label for="">Пароль</label>
                 </div>
 

@@ -1,5 +1,8 @@
 package backend.controller;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 import backend.model.HistoryOfOrders;
 import backend.model.User;
 import backend.service.HistoryOfOrdersService;

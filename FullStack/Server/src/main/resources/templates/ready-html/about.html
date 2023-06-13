@@ -1,32 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2CCEL3TPS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-N2CCEL3TPS');
+    </script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>about</title>
     <link rel="icon" type="image" href="img/icon.png">
-    <title>SkyLink Airlines</title>
-   
+
+    <script src="libs/gsap/gsap.min.js" defer></script>
+    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
 
     <link rel="stylesheet" href="css/main.css">
-    <script src="jsp/app.js" defer></script>
+    <script src="js/app.js" defer></script>
 
 </head>
-<body style="background-color: #1E1D1E;
-color: #fff;
-font-size: calc(var(--index) * .8);
-font-family: raleway_c, sans-serif;
-line-height: 1.75;
-height: 85vh;
-font-weight: 300;">
+
+<body>
 
 
-<div><img src="img/logoGray.png" alt="" class="logoGray"></div>
+<div class="wrapper">
+    <div class="content">
 
-<div data-v-3699c9a0 data-v-4d5efaa8 class="scrolldown">
-    <svg data-v-3699c9a0 version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-         x="0px" y="0px" width="28.5px" height="43.5px" viewBox="0 0 28.5 43.5" enable-background="new 0 0 28.5 43.5"
-         xml:space="preserve">
+        <a th:href="@{/main}"> <img src="img/icon.png" alt="" class="iconForm"></a>
+        <div><img src="img/logoGray.png" alt="" class="logoGray"></div>
+
+        <div data-v-3699c9a0 data-v-4d5efaa8 class="scrolldown">
+            <svg data-v-3699c9a0 version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 x="0px" y="0px" width="28.5px" height="43.5px" viewBox="0 0 28.5 43.5" enable-background="new 0 0 28.5 43.5"
+                 xml:space="preserve">
 	<g data-v-3699c9a0>
 
 		<path data-v-3699c9a0 fill="none" stroke="#d39459" stroke-width="3"
@@ -34,7 +48,7 @@ font-weight: 300;">
 
         <line data-v-3699c9a0 id="dropdown-point" x1="14.415" y1="12.408" x2="14.415" y2="12.408" stroke="#d39459"
               stroke-width="5" stroke-linecap="round">
-	
+
 	<animate data-v-3699c9a0 id="animation1" attributeName="y2" dur="3s"
              values="12.408; 12.408; 12.408; 15.908; 19.408; 19.408; 23.408; 23.408; 23.408; 23.408; 23.408"
              repeatCount="indefinite" begin="0s" fill="freeze"></animate>
@@ -51,39 +65,57 @@ font-weight: 300;">
 	</line>
 	</g>
 	</svg>
-</div>
+        </div>
 
 
-<div class="aboutL"></div>
-<div><p class="ab1txt">Наши премиум клиенты <br> получают набор для <br> комфортного перелета.</p>
-    <p class="ab12txt">·Тапки <br> ·Крем <br> ·Маска для лица <br> ·Подарочная карта</p></div>
-<div><img src="img/about/ab1.png" alt="" class="ab1img">
-    <p class="ab2txt">Мобильная версия приложения будет представлена здесь в ближайшее время.</p></div>
-<div><img src="img/about/ab2.png" alt="" class="ab2img">
-    <div><p class="ab3txt">Найдите нас в социальных сетях или вернитесь на главную страницу.</p>
-        <div class="ab3B"><a th:href="@{/contacts}" class="linkOff">контакты</a></div>
-        <div class="ab32B"><a th:href="@{/main}" class="linkOff">на главную</a></div>
+
+        <div class="portfolio">
+            <div class="container">
+                <main class="gallery">
+
+                    <div data-speed=".9" class="gallery__left">
+
+                        <a th:href="@{/Canada}"> <img class="gallery__item" src="img/about/ab1.png" alt="Alt"> </a>
+
+                        <div class="text-block gallery__item">
+                            <h2 class="text-block__h">Мобильная версия приложения будет представлена здесь в ближайшее время.</h2>
+                            <p class="text-block__p">Наша компания активно развивается и планирует выпустить мобильную версию приложения в ближайшем будущем, чтобы обеспечить удобство и доступность нашим клиентам в любое время и в любом месте. Это позволит пользователям легко получать доступ к нашим услугам и управлять своими аккаунтами через мобильные устройства.</p>
+                        </div>
+
+                        <img class="gallery__item" src="img/about/ab3.png" alt="Alt">
+
+                    </div>
+
+
+
+                    <div data-speed="1.1" class="gallery__right">
+
+                        <div class="text-block gallery__item">
+                            <h2 class="text-block__h">Станьте премиум клиентом</h2>
+                            <p class="text-block__p">Нашим премиум клиентам предоставляется набор для комфортного перелета, включающий тапки, крем, маску для лица и подарочную карту. Тапки обеспечивают удобство и защиту ног во время полета, крем помогает увлажнить кожу, маска для лица позволяет расслабиться во время полёта, а подарочная карта даст возможность насладиться дополнительными услугами компании во время путешествия.
+                                <br> Премиум статус получается при осуществлении десяти заказов на нашем сайте. </p>
+
+
+
+                        </div>
+
+                        <img class="gallery__item" src="img/about/ab2.png" alt="Alt">
+
+                        <div class="text-block gallery__item">
+                            <h2 class="text-block__h">Полезные ссылки</h2>
+                            <p class="text-block__p">Подписывайтесь на наши социальные сети, чтобы быть в курсе всех наших последних новостей, акций и специальных предложений! Также вы всегда можете вернуться на главную страницу нашего сайта, чтобы узнать больше о нас и наших услугах. Ссылки на страницу наших контактов и главную страницу доступны ниже. <br> <br> </p>
+                            <a th:href="@{/contacts}" class="linkOffYel" >Контакты -> <br> <br> </a>
+                            <a th:href="@{/main}" class="linkOffYel" >Главная -></a>
+                        </div>
+
+                    </div>
+
+                </main>
+            </div>
+        </div>
+
     </div>
 </div>
-<div><img src="img/about/ab3.png" alt="" class="ab3img"></div>
-
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

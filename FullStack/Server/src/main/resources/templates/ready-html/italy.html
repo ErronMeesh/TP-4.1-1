@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="ru">
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2CCEL3TPS"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-N2CCEL3TPS');
+	</script>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-	<title>SkyLink Airlines</title>
+	<title>Italy</title>
 	<link rel="icon" type="image" href="img/icon.png">
 
 	<link rel="stylesheet" href="cssp/main.css">
@@ -48,7 +56,7 @@ font-weight: 300;">
 			
 								<button th:if="${user } != null" type="submit">Выбрать</button>
 								<div class="register">
-									<p>Нет аккаунта? <a th:href="@{/user/reg}">Зарегистрировать</a></p>
+									<p>Нет аккаунта? <a th:href="@{/reg}">Зарегистрировать</a></p>
 							
 								</div>
 							</form>
@@ -84,6 +92,7 @@ font-weight: 300;">
 
 
 
+			<div class="frame"></div>
 
 
 
@@ -103,6 +112,7 @@ font-weight: 300;">
 			</div>
 
 
+			<div class="frame"></div>
 
 
 			<div class="frame">

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2CCEL3TPS"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-N2CCEL3TPS');
+	</script>
 	<link rel="icon" type="image" href="img/work/icon.jpg">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>SkyLink Airlines</title>
+	<title>Account</title>
 	<link rel="icon" type="image" href="img/icon.png">
 
 	<script src="libs/gsap/gsap.min.js" defer></script>
@@ -26,7 +34,7 @@
 			<header class="plane-section">
 
 				
-				<a th:href="@{/main}"> <img src="img/iconW.png" alt="" class="iconForm"></a>
+				<a th:href="@{/main}"> <img src="img/icon.png" alt="" class="iconForm"></a>
 <div> <p class="accWel">Добро пожаловать в ваш личный кабинет</p><img src="img/logoGray.png" alt="" class="logoGrayAbb"></div>
 <a th:if="${user} != null" th:href="@{/logout}" class="accLout">Выйти</a>
 <p th:if="${error} != null" th:text="${error}"></p>
