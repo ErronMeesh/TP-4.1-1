@@ -20,4 +20,4 @@
 * [Обзор клиентской части приложения](https://drive.google.com/drive/folders/1jZyPDKNeObwtjBFFNHRWF2BoGR_oy4_F?usp=sharing)
 * [Видеопрезентация проекта](https://drive.google.com/file/d/1qHerAvMpDBNcvijUXq42joMdbmP1Qen1/view?usp=drive_link)
 * [Презентация проекта](https://docs.google.com/presentation/d/1qRqRySYEr27jArMHJQJsnzR-BaIDAaB-/edit?usp=drive_link&ouid=106646677803705549711&rtpof=true&sd=true)
-* [Сайт](https://drive.google.com/drive/folders/1taGjxxL5dmsCBihozTdgEUPcgDaVowN7?usp=sharing)
+* [Ссылка на сайт](http://1613979-ci26482.twc1.net:8080/main)
