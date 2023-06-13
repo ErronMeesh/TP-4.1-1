@@ -15,7 +15,9 @@
 ## Документация
 *	[Техническое задание](https://github.com/ErronMeesh/TP-4.1-1/blob/main/documentation/Tekhnicheskoe_zadanie.pdf)
 *	[Курсовой проект](https://github.com/ErronMeesh/TP-4.1-1/blob/main/documentation/Kursovoy_proekt.pdf)
-* [Презентация проекта](https://docs.google.com/presentation/d/1qRqRySYEr27jArMHJQJsnzR-BaIDAaB-/edit?usp=drive_link&ouid=106646677803705549711&rtpof=true&sd=true)
+* [Презентация проекта](https://github.com/ErronMeesh/TP-4.1-1/blob/main/documentation/Презентация.pdf)
+* [Отчёт по ролям](https://github.com/ErronMeesh/TP-4.1-1/blob/main/documentation/Отчёт%20по%20ролям.pdf)
+* [Сопроводительное письмо](https://github.com/ErronMeesh/TP-4.1-1/blob/main/documentation/Сопроводительное%20письмо.pdf)
 
 ## Видео
 * [Видеопрезентация защиты ТЗ](https://drive.google.com/file/d/1NBzXl_LQeGiRFN-EDbiD6ynB5uq0kxFE/view)
